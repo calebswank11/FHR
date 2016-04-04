@@ -1,0 +1,42 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>FHR</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width">
+  
+
+  </head>
+
+  <body>
+
+    <!-- START NAVIGATION --> 
+    <nav>
+      <div class="logo white"></div>
+      <ul class="flex-row">
+        <li>
+            <a href="" class="button bdrds50px ">Prices</a>
+        </li>
+        <!--(bake-start _foreach="social:[facebook, twitter, linkedIn]")-->
+        <li>
+          <a class="{{social}}" href="http://www.{{social}}.com" target="_blank">test</a>
+        </li>
+        <!--(bake-end)--> 
+      </ul> 
+
+      <!--MAIN NAV-->
+      <ul>
+         <!--(bake /includes/mainNavigation.html)-->
+      </ul>  
+    </nav> 
+    <!-- END NAVIGATION -->
+ 
+    <footer>
+      <!--(bake /includes/footer.html)-->
+    </footer>
+
+
+  </body>
+</html>

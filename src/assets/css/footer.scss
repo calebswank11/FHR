@@ -1,0 +1,264 @@
+$dkTan : #938f75;
+$tan : #c5c09f;
+$orange : #c48233;
+$grey : #444444;
+$dkGrey : #2b2a31;
+$ltGrey : #a1a1a1;
+$red : #d4002b;
+$green : #487a1d;
+$brown : #51463f;
+
+// FONTS
+$sans-serif : "proxima-nova",sans-serif;
+$serif : 'Roboto Slab', serif;
+
+// INCLUDE/MIXINS
+
+$max : "max-width:";
+@function max($pxSize) {
+	@return #{$max} ($pxSize)+px;
+}
+$min : "min-width:";
+@function min($pxSize) {
+	@return #{$min} ($pxSize)+px; 
+}
+
+$ease : cubic-bezier(0.44, 0.2, 0, 1.01);
+
+@mixin clearfix {
+	&::after {
+		clear: both;
+		display: table;
+		content: '';
+	}
+}
+@mixin trans {
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%, -50%);
+}
+@mixin transX {
+	left: 50%;
+	transform: translateX(-50%);
+}
+@mixin transY {
+	top: 50%;
+	transform: translateY(-50%);
+}
+@mixin transClear {
+	left: auto;
+	top: auto;
+	transform: translate(0%, 0%);
+}
+@mixin transXClear {
+	left: Auto;
+	transform: translate(0%, -50%);
+}
+@mixin transYClear {
+	top: auto;
+	transform: translate(-50%, 0%);
+}
+@mixin content {
+	content: '';
+	display: block;
+	position: absolute;
+}
+@mixin mawh {
+	height: 100%;
+	width: 100%;
+}
+footer {
+	div {
+		position: relative;
+	}
+	& > div:last-of-type {
+	    padding: 3rem 0;
+	}
+	ul {
+		a {
+			font-weight: 100;
+		}
+	}
+	ul:nth-of-type(2) {
+		padding-bottom: 1rem;
+	}
+}
+#footerContact {
+	padding: 3rem 0;
+	background-image: url(../images/1600/footerContactBackground.jpg);
+	-webkit-background-size: cover;
+	background-size: cover;
+	background-position: center center;
+	background-repeat: no-repeat;
+	position: relative;
+	z-index: 1;
+	input[type="text"] {
+		padding: 9px;
+	}
+	&::before {
+		@include content;
+		@include mawh;
+		width: 110%;
+		@include trans;
+		-webkit-box-shadow: inset 0 4px 10px rgba(0,0,0,0.4);
+		box-shadow: inset 0 4px 10px rgba(0,0,0,0.4);	
+		pointer-events: none;
+	}
+	p {
+		font-weight: 600;
+		line-height: calc(1rem + 20px);
+	}
+	& > div {
+		@media (max(1024)) {
+			width: 90%;
+			left: 5%;
+			p {
+				width: 100%;
+				text-align: center;
+				padding-bottom: 2rem;
+			}
+			form {
+				width: 100%;
+			}
+			div, input {
+				width: calc(85% / 3);
+				margin-right: 5%;
+			}
+		}
+		@media (max(768)) {
+			div, input {
+				width: calc(100%);
+				margin-right: 0;
+				margin-top: 1rem;
+			}
+		}
+	}
+}
+#breadcrumbs {
+	position: relative;
+	padding: 1.5rem 0;
+	@media (max(768)) {
+		padding: 2rem 1rem;
+	}
+	&::before {
+		@include content;
+		@include mawh;
+		@include trans;
+		background-image: url(../images/patterns/chevron-pattern-black.png);
+		background-repeat: repeat;
+		opacity: .15;
+	}
+	ul {
+
+	}
+	li {
+		list-style: none;
+		padding: 0 .5rem;
+	}
+	a {
+		color: $tan;
+		font-weight: 400;
+		text-decoration: none;
+	}
+}
+.goHome {
+	position: relative;
+	height: 30px;
+	width: 20px;
+	@media (max(1024)) {
+		height: 20px;
+	}
+	a {
+		height: 15px;
+		width: 12px;
+		@include trans;
+		position: absolute;
+		display: block;
+		&::before {
+			@include content;
+			@include mawh;
+			@include trans;
+			background-image: url(../images/svgs/HouseIcon_Breadcrumb.svg);
+			-webkit-background-size: cover;
+			background-size: cover;
+			background-position: center center;
+			background-repeat: no-repeat;
+		}
+	}
+}
+.logoList {
+	padding-bottom: .5rem;
+	a {
+		display: block;
+		width: 100px;
+		margin-left: 2rem;
+		@media (max(1024)) {
+			margin-left: 0;
+			// width: calc(100% / 3);
+		}
+	}
+	li:first-of-type a {
+		margin-left: 0;
+	}
+	svg, path, polygon {
+		@media (max(1024)) {
+			fill: $grey;
+		}
+	}
+}
+.footerList {
+	a {
+		padding-left: 1rem;
+		text-decoration: none;
+	}
+}
+#footerLogos {
+	@media (max(1024)) {
+		display: none;
+	}
+}
+#companyLogos {
+	@media (max(1024)) {
+		padding-top: 3rem;
+	}
+	li {
+		@media (max(1024)) {
+			width: calc(100% / 3);	
+		}
+	}
+	a {
+		@media (max(1024)) {
+			width: 100%;
+			padding: 0 .5rem;
+			padding-left: 0;
+		}
+	}
+}
+#footerNavItems {
+	@media (max(1024)) {
+		display: none;
+	}
+}
+#footerLegal {
+	@media (max(1024)) {
+		li {
+			float: none;
+		}
+		a {
+			color: $grey;
+			padding-left: 0;
+		}
+	}
+}
+.copyright {
+	@media (max(1024)) {
+		width: 100%;
+		color: $grey;
+	}
+	@media (max(768)) {
+		text-decoration: none;
+	}
+	@media (max(600)) {
+		text-decoration: none;
+	}
+}
