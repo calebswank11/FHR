@@ -7,10 +7,10 @@
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width">
 
-    <link rel="stylesheet" href="http://172.16.74.43/FHR/dist/assets/css/master.css">
-    <link rel="stylesheet" href="http://172.16.74.43/FHR/dist/assets/css/style.css">
-    <link rel="stylesheet" href="http://172.16.74.43/FHR/dist/assets/css/header.css">
-    <link rel="stylesheet" href="http://172.16.74.43/FHR/dist/assets/css/footer.css">
+    <link rel="stylesheet" href="/assets/css/master.css">
+    <link rel="stylesheet" href="/assets/css/style.css">
+    <link rel="stylesheet" href="/assets/css/header.css">
+    <link rel="stylesheet" href="/assets/css/footer.css">
 
     <!-- FONT SCRIPTS -->
     <script src="https://use.typekit.net/feu6hxh.js"></script>
@@ -49,7 +49,7 @@
            	<div class="navOverlay"></div>
            	<div class="mobileAction">Menu</div>
            	<div class="logo white fl">
-           		<a href="/FHR/dist">
+           		<a href="/">
 
            		<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
            			 viewBox="0 0 238.2 67.1" enable-background="new 0 0 238.2 67.1" xml:space="preserve">
@@ -137,7 +137,7 @@
            		<div class="navigationClose">Close</div>
               		<ul class="fr navigationSocial">
               			<li class="dib">
-              				<a href="" id="pricesButton" class="button bdrds50">
+              				<a href="/prices/" id="pricesButton" class="button">
               					Prices
               				</a>
               			</li>
@@ -196,18 +196,22 @@
 
            		<!--MAIN NAV-->
            		<ul class="bt bcWhite navigation fr">
+           			<div class="navigationHover"></div>
+           			<li class="dn" style="display: none">
+           				<a href="fhr.dev:8888"></a>
+           			</li>
            			<li class="dib">
            				<p class="dropdown">About FHR</p>
            				<ul class="subNavigation">
            					<div class="navigationBack">Back</div>
            					<li>
-           						<a href="/FHR/dist/careers">What We Do</a>
+           						<a href="/about">What We Do</a>
            					</li>
            					<li>
-           						<a href="/FHR/dist/careers">Locations</a>
+           						<a href="/careers">Locations</a>
            					</li>
            					<li>
-           						<a href="/FHR/dist/careers">Products You Use</a>
+           						<a href="/careers">Products You Use</a>
            					</li>
            				</ul>
            			</li>
@@ -216,13 +220,13 @@
            				<ul class="subNavigation">
            					<div class="navigationBack">Back</div>
            					<li>
-           						<a href="/FHR/dist/careers">Fuels and Aromoatics</a>
+           						<a href="/fuels-and-aromatics">Fuels & Aromatics</a>
            					</li>
            					<li>
-           						<a href="/FHR/dist/careers">Olefins and Polymers</a>
+           						<a href="/olefins-and-polymers">Olefins & Polymers</a>
            					</li>
            					<li>
-           						<a href="/FHR/dist/careers">Bioduels and Ingredients</a>
+           						<a href="/biofuels-and-ingredients">Biofuels & Ingredients</a>
            					</li>
            				</ul>
            			</li>
@@ -232,14 +236,14 @@
            				</ul>
            			</li>
            			<li class="dib">
-           				<a href="/FHR/dist/newsroom">Newsroom</a>
+           				<a href="/newsroom">Newsroom</a>
            			</li>
            			<li class="dib">
-           				<a href="/FHR/dist/careers">Careers</a>
+           				<a href="/careers">Careers</a>
            			</li>
            		</ul>
            	</div>
-           </nav> 
+           </nav>
 
       <!-- START HERO INTERIOR -->
           <!doctype html>
@@ -256,10 +260,10 @@
 
           	</div>
           	<picture>
-          		<source srcset="/FHR/dist/assets/images/320/careersHero.jpg" media="(max-width: 320px)">
-          		<source srcset="/FHR/dist/assets/images/640/careersHero.jpg" media="(max-width: 640px)">
-          		<source srcset="/FHR/dist/assets/images/1024/careersHero.jpg" media="(max-width: 1024px)">
-          		<img src="/FHR/dist/assets/images/1600/careersHero.jpg" alt="Hero image homepage">		
+          		<source srcset="/assets/images/320/careersHero.jpg" media="(max-width: 320px)">
+          		<source srcset="/assets/images/640/careersHero.jpg" media="(max-width: 640px)">
+          		<source srcset="/assets/images/1024/careersHero.jpg" media="(max-width: 1024px)">
+          		<img src="/assets/images/1600/careersHero.jpg" alt="Hero image homepage">		
           	</picture>
           </section>
       
@@ -267,40 +271,72 @@
           <!DOCTYPE html>
           <!-- backgroundTriangleTexture -->
           <section class="threeColumnModuleRise col-17 maxWidthRow backgroundTriangleTexture">
-          	<div class="push-right-4">
-          		<div class="col-3 fl textColumn orangeBG backgroundImage" id="careersPageRow2Section1">
+          	<!-- START MODULE DEFINITIONS -->
+          	<!-- \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\ -->
+          	<!-- NEED TO BE ABLE TO DEFINE MODULES INDIVIDUALLY WITHIN THESE THREE COLUMNS -->
+          	<!-- TYPES OF POTENTIAL MODULES -->
+          	<!-- link with button -->
+          	<!-- video option -->
+          	<!-- profile -->
+          	<!-- profile with video -->
+          	<!-- maybe more to come -->
+          	<div>
+          		<!-- MODULE COLUMN -->
+          		<!-- \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\ -->
+          		<div class="col-divide-3 fl textColumn orangeBG backgroundImage" id="careersPageRow2Section1">
+          			<!-- ID USED FOR BACKGROUND IMAGE. CAN IMPLEMENT ANOTHER WAY IF IT MAKES SENSE -->
           			<div>
-          				<p class="white ttu serif">&rdquo;You could be impacting a large number of people or even a community.&ldquo;</p>
+          				<!-- PROFILE MODULE OPTION -->
+
+          				<!-- COLUMN CONTENT START -->
+          				<p class="white serif subMedium">&rdquo;You could be impacting a large number of people or even a community.&ldquo;</p>
           				<div class="horizontalRow whiteBG"></div>
-          				<p class="subTextSemiBold tac white">
+          				<p class="thin tac white">
           					Dawn, Director of Process Safety
           					<span>Flint Hills Resources</span>
           				</p>
+          				<!-- COLUMN CONTENT END -->
           			</div>
           		</div>
-          		<div class="col-3 fl textColumn dkGreyBG backgroundImage" id="careersPageRow2Section2">
+          		<!-- MODULE COLUMN -->
+          		<!-- \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\ -->
+          		<div class="col-divide-3 fl textColumn dkGreyBG backgroundImage" id="careersPageRow2Section2">
+          			<!-- ID USED FOR BACKGROUND IMAGE. CAN IMPLEMENT ANOTHER WAY IF IT MAKES SENSE -->
           			<div class="videoModal" data-video="JYQ0QqhSh7I">
-          				<p class="white ttu serif">&rdquo;I'm excited that I'm at a place where my opinion matters.&ldquo;</p>
+          			<!-- VIDEO MODULE OPTION -->
+
+          				<!-- COLUMN CONTENT START -->
+          				<p class="white serif subMedium">&rdquo;I'm excited that I'm at a place where my opinion matters.&ldquo;</p>
           				<div class="playButton"></div>
-          				<p class="subTextSemiBold tac white">
+          				<p class="thin tac white">
           					Steve, reliability manager
           					<span>Flint Hills Resources ethanol plant</span>
           					<span>Fairbank, Iowa</span>
           				</p>
+          				<!-- COLUMN CONTENT END -->
           			</div>
           		</div>
-          		<div class="col-3 fl textColumn tanBG backgroundImage" id="careersPageRow2Section3">
+          		<!-- MODULE COLUMN -->
+          		<!-- \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\ -->
+          		<div class="col-divide-3 fl textColumn tanBG backgroundImage" id="careersPageRow2Section3">
+          			<!-- ID USED FOR BACKGROUND IMAGE. CAN IMPLEMENT ANOTHER WAY IF IT MAKES SENSE -->
           			<div>
-          				<p class="white ttu serif">&rdquo;We're building something that's the first of its kind and I'm one of the gatekeepers.&ldquo;</p>
+          				<!-- PROFILE MODULE OPTION -->
+
+          				<!-- COLUMN CONTENT START -->
+          				<p class="white serif subMedium">&rdquo;We're building something that's the first of its kind and I'm one of the gatekeepers.&ldquo;</p>
           				<div class="horizontalRow whiteBG"></div>
-          				<p class="subTextSemiBold tac white">
+          				<p class="thin tac white">
           					Dillon, project engineer
           					<span>Flint Hills Resources biodiesel plant</span>
           					<span>Beatrice, Nebraska</span>
           				</p>
+          				<!-- COLUMN CONTENT END -->
           			</div>
           		</div>
+          		<!-- END MODULE COLUMNS -->
           	</div>
+          	<!-- \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\ -->
           </section>
 
       <!-- START TWO COLUMN SPLIT -->
@@ -344,7 +380,7 @@
           			<div class="horizontalRow greyBG left"></div>
           			<div class="horizontalImageModule anchorBottom">
           				<div class="ImageModuleVisual shadow">
-          					<img src="/FHR/dist/assets/images/320/readDawnWurstStory.jpg" height="100" width="150" alt="">
+          					<img src="/assets/images/320/readDawnWurstStory.jpg" height="100" width="150" alt="">
           				</div>
           				<div class="imageModuleText">
           					<p class="subTextRegular white">For Dawn Wurst, she’s found her “why” as the Director of Process Safety for Flint Hills Resources – protecting people’s lives.
@@ -398,8 +434,8 @@
           	<div class="greyBG" id="footerLogos">		
           		<div class="push-right-2 col-13">
           			<ul class="logoList fl col-6" id="companyLogos">
-          			  			<li class="fl">
-          			  				<a id="fhrlogo" href="http://www.fhr.com" target="_blank">
+          	  			<li class="fl">
+          	  				<a id="fhrlogo" href="/" target="_blank">
           						<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
           							 viewBox="0 0 238.2 67.1" enable-background="new 0 0 238.2 67.1" xml:space="preserve">
           						<g>
@@ -507,146 +543,33 @@
           						</g>
           						</svg>
           					</a>
-          			  			</li>
-          			  			<li class="fl">
-          			  				<a id="wearekochlogo" href="http://www.wearekoch.com" target="_blank">
-          						<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-          							 viewBox="0 0 226 52.2" enable-background="new 0 0 226 52.2" xml:space="preserve">
-          						<g>
-          							<g>
-          								<path fill="#FFFFFF" d="M159.5,41.5c0.2,0.1,0.7,1.7,0.4,2.6c0.1,0.2,0,0.4-0.1,0.6c-0.1,0.2-0.3,0.3-0.6,0.3
-          									c-0.6,0-1-0.2-1.5-0.5c-0.6-0.4-1.2-0.9-1.9-1.3c-2-1.1-5.1-2.9-7.3-3.6c-2.9-0.9-5.5-2.8-8.2-4.3c-0.9-0.5-1.7-1.1-2.5-1.6
-          									c-0.1-0.1-0.5,0.1-0.6,0.2c-0.1,0.1-0.1,0.3-0.2,0.4c0,0.1-0.1,0.3-0.1,0.4c-0.1,1.5-0.4,2.1-0.7,3.6c-0.4,1.6-1.5,4.5-1.8,5.6
-          									c-0.7,2.5-1.5,3.1-1.6,3.5c-0.1,0.3-0.2,0.6-0.4,0.8c-0.3,0.4-1,0.6-1.4,0.3c-0.5-0.3-1-0.7-1.2-1.3c-0.4-1.3-0.1-1,0-2.4
-          									c0.1-2-0.1-1.1,0.2-3.1c0.2-1.1,0.1-0.9,0.2-2c0.1-1.2-0.1-0.2,0.1-1.3c0.1-0.6,0.2-1.2,0.3-1.8c0.1-0.5,0.1-0.9,0.2-1.4
-          									c0.2-1.5,0.5-3,0.7-4.5c0.2-2.5,0.6-5,0.8-7.5c0.3-3.3,0.7-6.5,1.1-9.8c0-0.2,0-0.3,0.1-0.5c0.1-1,0.3-2,0.2-3
-          									c-0.1-1-0.9-1.8-1.3-2.6c-0.2-0.4-0.4-0.8-0.5-1.3c-0.1-0.6,0.3-1.2,0.8-1.5c0.9-0.4,0.9,0.1,1.8,0.4c2,0.6,2.9,1,4.1,2.6
-          									c0.6,0.8,1.1,1.7,1.3,2.7c0,0.2,0.1,0.4,0.2,0.6c0.7,1.7-0.6,9-0.8,9.9c0,0.1,0,0.3,0.1,0.4c0.1,0,0.3,0,0.4-0.1
-          									c2.8-1.7,6.3-4.2,8.5-6.6c1.6-1.5,2.8-3.4,4.1-4.8c0.8-0.9,1.1-2,1.6-3.1c0.7-2.8,4.7-1.4,4.9-1.1c0.4,0.6,0.5,1.3,0.2,2
-          									c-0.2,0.5-0.4,1-0.6,1.5c-0.2,0.4-0.5,0.8-0.6,1.2c-0.4,1.4-1.2,2.6-1.7,4c-0.2,0.6-0.6,1.2-1,1.8c-1.1,1.4-2.4,2.8-3.9,3.9
-          									c-0.7,0.5-1.4,1-2,1.6c-0.9,0.8-1.8,1.4-2.8,2c-1.8,1.1-2.5,1.8-4.3,3c-0.7,0.5-1.5,1.1-1.5,1.2c0.1,0.2,0.3,0.4,0.4,0.5
-          									c1.1,0.9,2.5,1.8,3.8,2.5c2.9,1.4,4.3,3.3,7.1,4.8c0.5,0.3,0.8,0.8,1.3,1C153.5,36.8,158.3,40.9,159.5,41.5z"/>
-          								<path fill="#FFFFFF" d="M153.7,38.5L153.7,38.5C153.7,38.5,153.7,38.5,153.7,38.5L153.7,38.5z"/>
-          								<path fill="#FFFFFF" d="M170.5,18.2c-0.7-0.8-1.5-1.5-2.5-1.8c-1.5-0.4-3-0.2-4.4,0.8c-1.7,1.2-1-0.3-2.5,1.1
-          									c-2.4,2.3-4.5,4.7-6.3,7.7c-1,1.7-1.4,3.5-1.9,5.4c-0.1,0.3-0.2,0.6-0.1,0.9c0.1,2,0.1,4.2,1.5,5.8c0.2,0.3,0.5,0.4,0.7,0.8
-          									c0.7,0.4,1.5,1,2.3,1.2c1.1,0.3,1.7,0.2,2.8,0c1.8-0.3,4-0.5,5.4-2.1c0.1-0.1,0.3-0.2,0.4-0.3c1.3-0.8,3.4-2.3,4.1-3.7
-          									c2.3-4.4,2.3-10.8,2.3-10.9C172.8,21.8,171.3,19.1,170.5,18.2z M167.4,23.9c-0.3,2.4-0.9,4.7-2.1,6.8c-0.7,1.1-1.2,2.7-2.3,3.4
-          									c-0.4,0.3-0.7,0.3-1,0.6c-1.1,1-2.3,1.9-3.7,2c-0.1,0-0.3-0.1-0.4-0.2c-0.1-0.1,0-0.4,0-0.5c-1.3-4,1.2-7.2,2.1-8.5
-          									c2.2-3.3,5-5.4,6.3-4.6c0.1,0.1,0.3-0.2,0.5-0.1c0.1,0,0.2,0.3,0.2,0.5C167.1,23.7,167.4,23.4,167.4,23.9z"/>
-          							</g>
-          							<path fill="#FFFFFF" d="M48.2,37.9c1-0.1,1.7-0.4,2.5-0.8c0.2-0.1,0.6,0.1,0.8,0.3c0.1,0.2,0.2,0.4,0.3,0.6
-          								c0.4,1.2,0.3,3.1-0.8,3.6c-0.8,0.3-1.5,0.5-2.4,0.8c-0.8,0.3-7.2,1.3-8.5,1c-1.1-0.2-2.7,1.3-3.8,1.2c-0.8-0.1-1.4-0.5-1.9-1
-          								c-0.5-0.5-0.9-1.1-1.2-1.7c-0.6-1.3-0.8-2.6-0.7-4c0.1-1.6,0.3-3.3,0.5-4.9c0.2-1.4,0.4-2.7,0.8-4c0.5-1.8,1-3.6,1.6-5.3
-          								c0.2-0.7,0.5-1.4,0.6-2.6c0-0.3-0.2-0.5-0.2-0.7c0-0.2,0-0.4,0.1-0.6c0.7-0.6,4.4-0.7,4.7-0.3c0.1,0.1,0.4,0.3,0.6,0.3
-          								c1.2-0.1,4.5,0.2,5.6-0.1c1.7-0.4,3.1-1.5,4.6-0.7c0.3,0.2,0.6,0.4,0.9,0.7c0.5,0.5,0.5,1.2,0.2,1.8c-1.1,0.4-2.3,1.6-3.4,2
-          								c-0.4,0.1-1.6,0.7-2,0.9c-1,0.4-3.2,0.5-4.3,0.5c-0.5,0-1,0.1-1.6,0.1c-0.3,0-0.4,0.1-0.5,0.3c-0.4,1-0.8,2-1.2,3.1
-          								c-0.1,0.2,0.2,0.6,0.5,0.6c0.7,0.2,5,0.1,5.6-0.1c0.5-0.2,1.1-0.4,1.6-0.6c0.5-0.2,1-0.3,1.5-0.2c0.2,0,0.5,0.1,0.6,0.2
-          								c0.9,0.9,0.4-0.2,0.8,0.9c0.1,0.3,0,0.7-0.2,0.9c-0.9,0.9-2.7,1.8-4.2,2.2c-0.8,0.3-5.3,1.5-6.4,1c-0.3-0.1-1,0.7-1.1,0.9
-          								c0,0.1-0.1,0.3-0.1,0.4c-0.1,1.4-0.3,2.9-0.4,4.3c0,0.3,0-0.1-0.1,0.2c0,0.2,0,0.4,0,0.6C37.4,40.2,45.1,38.1,48.2,37.9z"/>
-          							<g>
-          								<path fill="#FFFFFF" d="M102.2,40.8c-0.2-0.4-0.2-1.3-0.5-1.6c-0.6-0.7-0.8-0.9-0.9-1.8c-0.1-0.5-1.1-1.2-1.3-1
-          									c-0.1,0.1-0.6-0.2-0.7-0.3c-0.4-0.4-0.8-0.7-1.2-1.2c-1.2-1.3-2.1-1.9-3.4-3.1c-0.4-0.3-0.7-0.7-1-1c-0.1-0.1-0.2-0.2-0.2-0.3
-          									c-0.1-0.1-0.1-0.5,0.1-0.6c1.2-0.9,1.8-1.7,3.1-2.6c1.6-1.1,2.9-2.4,4.3-3.6c0.6-0.6,1.1-1.2,1.7-1.9c0.9-1,1.3-2.1,1.9-3.3
-          									c0.5-1.1,0.5-2.3,0.4-3.5c0-0.1-0.1-0.3-0.1-0.4c-0.5-1.1-1.1-1.9-2.3-2.2c-0.2,0-0.4-0.1-0.9-0.3c-1.6-0.5-3.4-0.2-5.1,0.6
-          									c-1.7,0.7-3.2,1.7-4.5,3c-0.8,0.7-1.6,1.5-2.5,2.3c-0.4,0.3-0.7,0.7-1.2,0.9c-0.3,0.1-0.7,0-1-0.1c-0.1,0-0.1,0-0.2,0
-          									c-0.9,0.1-1.4,0.7-1.4,1.5c0,0.3,0.1,0.7,0.1,1c0,0.7-0.3,1.2-0.9,1.5c-1.3,0.6-2.5,1.1-3.9,1.2c-0.3,0-0.6-0.2-0.7-0.6
-          									c0-0.2,0.3-2.6,0.3-2.8c0-1.4,0-4.7,0-6.1c-0.1-1.7-0.1-3.4-0.2-5c-0.1-1.2-0.5-2.3-1.3-3.2c-0.8-0.9-1.7-1.4-2.9-1.3
-          									c-2.5,0.2-4.6,1.1-6,3.3c-0.1,0.2-0.8,0.9-0.9,1.2c-0.7,1.7-0.4,0.7-1,2.5c-0.8,1.6-2.9,9.4-3.4,11.1c-0.3,0.9-0.6,1.7-1,2.6
-          									c-0.1,0.3-0.3,0.5-0.6,0.5c-0.4,0.1-0.8,0.1-1.2,0.2c-0.7,0.2-1.1,0.7-1.2,1.3c-0.2,0.8-0.3,2.6,0.1,3.3c0.2,0.4,1,0.6,1.3,1
-          									c0.1,0.3-0.4,0.8-0.4,1.1c-0.3,0.9-0.4,0.8-0.7,1.8c-0.2,0.9-1,5-1.8,5.4c-0.1,0.1-0.2,0.2-0.3,0.2c-0.4,0.4-0.6,0.8-0.5,1.3
-          									c0,0.7,0.3,1.4,0.9,1.8c0.7,0.5,1.4,0.9,2.3,0.7c0.2,0,0.4,0,0.6-0.1c0.3-0.1,0.6-0.1,0.8-0.3c1.7-1.3,3.2-6.3,3.7-8.5
-          									c0.2-0.7,0.3-1.6,0.5-2.3c0.1-0.3,0.3-0.5,0.6-0.5c0.8-0.1,2.1,0,2.9-0.1c1-0.1,2-0.4,3-0.8c0.3-0.1,0.6-0.2,1-0.4
-          									c0.2-0.1,0.5,0.1,0.5,0.3c0,0.2,0.1,0.4,0.1,0.6c0.1,1.9,0.3,3.8,0.5,5.7c0.1,1.2,0.5,6.3,0.3,7.5c0,0.2,0.1,0.6,0.2,0.8
-          									c0.5,0.7,1,1.4,1.6,1.9c0.1,0.1,0.2,0.2,0.3,0.3c0.4,0.3,0.8,0.3,1.2,0.1c0.4-0.2,0.7-0.5,0.8-0.9c0.2-0.5,0.3-1.1,0.3-1.7
-          									c0-1-0.1-5.9-0.1-6.9c0-0.8,0.1-1.7,0.1-2.5c0-2,0-3.9-0.1-5.9c0-1.7,0-1.8,1.5-2.6c0.5-0.3,1-0.5,1.5-0.8
-          									c0.4-0.2,0.9-0.3,1.4-0.4c0.5,0,0.8,0.3,0.7,0.7c-0.2,0.8-0.4,1.6-0.6,2.4c-0.3,1.2-0.5,1.5-0.7,2.6c-0.3,1.9-0.8,3.7-1.2,5.6
-          									c-0.2,0.7-0.2,1.4-0.2,2.1c0,0.1,0,0.3,0.1,0.4c0.3,0.5,0.5,1,0.9,1.4c0.2,0.2,0.4,0.3,0.7,0.4c0.3,0.1,0.8,0,1-0.2
-          									c0.1-0.1,0.2-0.2,0.3-0.3c0.5-0.9,1.1-1.8,1.4-2.8c0.2-0.5,0.3-1,0.5-1.4c0.4-0.7,0.6-1.4,0.8-2.2c0.3-0.9,0.6-1.7,0.8-2.6
-          									c0.1-0.2,0.2-0.4,0.3-0.6c0.1-0.1,0.2-0.2,0.4-0.1c0.9,0.3,1.5,1,2.1,1.6c0.8,0.8,1.7,1.6,2.6,2.3c0.6,0.5,1.3,1.1,1.8,1.7
-          									c0.9,0.9,1.7,1.8,2.6,2.7c0.5,0.5,1.1,1.1,1.8,1.3c0.5,0.2,1,0.1,1.4-0.2C102.2,41.6,102.4,41.1,102.2,40.8z M74.1,25.5
-          									c-1.6,0.4-3.9,0.8-5.6,1c-0.2,0-0.4-0.2-0.3-0.4c0.2-0.5,0.3-1.1,0.5-1.6c0.8-2.6,2.4-9,3.9-11.2c0.2-0.3,1.1-1.7,1.6-1.9
-          									c0.2-0.1,0.3,0,0.3,0.1c0.1,0.3,0.6,0.6,0.6,0.9c0,1.7-0.2,8.4-0.3,10.1c-0.1,0.9,0.1,1.8,0.1,2.7C74.8,25.3,74.2,25.4,74.1,25.5z
-          									 M90.6,25.3c-0.1,0-0.1,0-0.2,0c0,0-0.8,0.4-0.8,0.3c-0.1-0.3,0.4-3.2,0.6-3.6c0.5-0.8,3.3-2.4,4.2-3.1c0.4-0.3,3.2-2.1,4.3-1.8
-          									c0.1,0,0.3-0.1,0.4-0.2c0.1,0,0.3,0,0.4,0c0.1,0,0.1,0.4,0,0.6c-0.2,0.4-0.4,0.7-0.7,1.1c-0.6,0.8-1.3,1.5-2,2.2
-          									c0,0.1-0.1,0.1-0.1,0.1C94.8,22.6,92.8,24.1,90.6,25.3z"/>
-          							</g>
-          							<g>
-          								<path fill="#FFFFFF" d="M122,35.5c0-0.2,0.4-2.3-0.2-2.6c-0.5,0.1-0.8,0-1.3,0.7c-0.4,1.2-4.5,2.9-7,3.7c-1,0.3-1.9,0.5-2.9,0.7
-          									c-0.6,0.1-1.2,0.1-1.9,0.1c-0.2,0-0.5-0.3-0.5-0.5c0-0.1,0-0.1,0-0.2c0.1-0.9,0.2-1.8,0.4-2.6c0.1-0.5,0.3-1,0.5-1.4
-          									c0.2-0.3,0.5-0.6,1-0.5c0.5,0.1,1,0,1.4,0c1.2-0.1,2.4-0.5,3.6-0.8c0.5-0.1,0.9-0.3,1.2-0.6c0.3-0.2,0.7-0.4,1-0.6
-          									c0.2-0.1,2-1.6,2-1.6c0-0.1,0.1-0.2,0.2-0.2c0.5-0.5,1.1-0.9,1.6-1.4c0.8-0.7,1.4-1.5,1.9-2.4c0-0.1,0-0.3-0.1-0.4
-          									c-0.1-0.1-0.2-0.2-0.3-0.2c-0.7,0-1.4,0.1-2,0.3c-1.1,0.4-2.9,1.5-4,1.9c-1.7,0.7-4.1,1.3-5.8,2c-0.2,0.1-0.4,0.1-0.6,0.1
-          									c-0.1,0-0.2-0.1-0.2-0.1c-0.1-1.1,0-2.6,0-3.7c0-0.1,0.1-0.3,0.2-0.3c0.5-0.1,0.9-0.1,1.4-0.1c0.6,0,2.6-0.4,3.1-0.7
-          									c1.6-0.7,1.7-0.4,3-1.6c0.9-0.8,2.5-1.5,3.5-2.3c1.1-0.9,2.1-1.9,3.1-2.9c0.3-0.3,0.5-0.6,0.5-1c0-0.2,0.1-0.4,0-0.6
-          									c-0.2-0.8,0.2-2.5-0.6-2.3c-0.2,0-0.4,0.1-0.6,0.2c-1.2,0.5-3.7,2.1-4.8,2.7c-2.2,1.2-2.9,1.2-5.2,2.3c-1.2,0.5-5.7,0.9-5.9,0.7
-          									c-0.4-0.2-0.8-0.4-1.2-0.3c-0.3,0,0.1,0-0.1,0c-0.4,0-0.8,0.2-1.1,0.4c-0.3,0.3-0.5,0.6-0.4,1c0.2,0.5,0.3,7.1-0.1,7.4
-          									c-0.4,0.4-0.5,0.9-0.4,1.4c0.2,1.2,0,2.4-0.3,3.6c-0.2,1.3-0.3,2.7-0.2,4c0.1,1.4,0.5,2.8,1.5,4c0.3,0.4,1,1.1,1.4,1.2
-          									c0.3,0.1,0.8,0.2,1.3,0.2c0.8,0.1,1.5,0,2.3,0.1c1.7,0.2,3.2-0.2,4.6-0.9c0.5-0.2,1-0.4,1.3-0.8c0.2-0.2,0.4-0.3,0.6-0.5
-          									C118.7,39.6,122,36.4,122,35.5z"/>
-          							</g>
-          							<path fill="#FFFFFF" d="M153.7,38.5L153.7,38.5C153.7,38.5,153.7,38.5,153.7,38.5L153.7,38.5z"/>
-          							<path fill="#FFFFFF" d="M226,24.9c0-0.1,0-0.4-0.1-0.5c-0.1-0.1-0.3-0.1-0.5-0.1c-0.9,0.1-1.6,0.6-2.3,1c-1,0.6-0.9,0.1-5.4,1.6
-          								c-0.6,0.2-2.1,0.3-2.7,0.5c-0.2,0.1-0.5-0.2-0.4-0.5c0.3-0.7,0.5-1.4,0.8-2.1c0.3-0.7,0.2-0.3,0.4-1c0.5-1.7,1-3.4,1.5-5.1
-          								c0.4-1.3,0.5-2.6,0.3-4c-0.1-0.8-0.2-1.7-0.3-2.5c-0.3-2.4-1-3.9-3.4-4.1c-0.2,0-0.3,0-0.5,0c-0.6-0.1-1.1,0-1.7,0
-          								c0,0-0.3,6.6-0.5,7.3c-0.3,1.1-0.7,2.3-1,3.4c0,0-0.1,0-0.1,0c-0.3,1.1-0.6,2.3-1,3.4c-1,2.8-1.1,3.1-1.9,6c-0.1,0.5-0.4,0.9-1,1.1
-          								c-0.2,0.1-0.3,0.1-0.5,0.2c-1.8,0.6-3.3,0.7-5.1,1.2c-0.3,0.1-0.7,0.1-1,0.1c-0.2,0-0.7-0.1-0.7-0.3c0.1-0.4,0.5-1.1,0.7-1.4
-          								c0.9-1.2,0.7-1.1,1-1.7c0.3-0.5,0.6-1,0.9-1.5c0.8-1.5,1.9-6,2.7-9.5c-0.2,0.3-0.4,0.7-0.6,1c-0.5-0.4-0.3-0.9-0.3-1.4
-          								c0-0.4-0.1-0.8-0.4-1.2c-0.4-0.5-1-0.9-1.7-1c-1-0.2-2,0-2.9,0.5c-0.4,0.3-0.8,0.6-0.9,1.2c-0.1,0.7-0.2,1.3-0.5,1.9
-          								c-0.9,1.6-0.2,3.5-1.3,4.9c-0.7,0.9-2.2,4.8-2.9,5.7c-1.4,1.7-2.7,2.3-4.3,3.7c-2.1,1.8-5.5,2.7-8,3.7c-0.8,0.4-5.7-0.1-5.2-4.2
-          								c0.1-1,0.4-1.8,0.7-2.3c1.7-2.6,4.5-4,7.3-5.2c1.9-0.8,3.8-1,5.5-2.3c0.3-0.3,0.6-1,0.8-1.4c0.5-0.6,0-1.8-0.4-2.4
-          								c-0.8-1.1-2.4-1.6-3.6-1c-0.7,0.4-1.5,0.8-2.3,1.1c-1.5,0.5-2.9,1.1-4.2,2.1c-0.5,0.4-3.6,2.2-4.6,3.4c-4.2,4.6-5,9.8-4.7,10.5
-          								c0.5,1.7,1.5,3,3,3.9c0.3,0.2,3.3,2,4.7,1.8c3.1-0.4,5.4-0.6,7.9-2.3c1.3-0.9,2.6-1.8,3.7-3c0.6-0.6,1.7-1.6,2.2-2.2
-          								c0,0.2-0.5,1-0.6,1.1c-1,1.9-1.1,2.1-2.3,3.9c-0.8,1.4-1.5,2.8-2,4.3c-0.2,0.7-0.7,1.4-0.5,2.2c0.1,0.8,0.5,1.6,0.8,2.4
-          								c0.1,0.2,0.3,0.4,0.4,0.6c0.2,0.2,0.4,0.3,0.6,0.5c0.4,0.3,1,0.3,1.4-0.1c0.4-0.3,0.7-0.7,0.9-1.2c0.7-1.3,1.5-2.4,2.5-3.5
-          								c0.3-0.4,3.5-6.7,4-6.6c0.3,0.1,3-0.2,3.6-0.4c1.7-0.4,3.5-0.6,5.2-0.6c0.2,0,0.3,0.1,0.3,0.3c0,1.1-0.9,3.9-1.2,5
-          								c-0.3,1.1-1,3.4-1.2,4.6c-0.2,1-0.6,2.1-0.9,3c0,0.2-0.4,0.4-0.6,0.6c-1,0.9,0.5,2,2.1,3.5c0.7,0.6,1.2,0.3,1.7-0.6
-          								c0.1-0.1,0.2-0.3,0.2-0.4c0.5-1.1,1-2.3,1.6-3.4c0.9-1.6,1.5-3.4,2.4-5c0.3-0.5,0.5-1.1,0.5-1.7c0.2-1.7,1.3-4.4,1.7-6
-          								c0.1-0.4,0.4-0.7,0.8-0.9c1.4-0.4,3.5-0.9,4.8-1.3c3.8-0.9,7.2-1.3,7.6-1.5c0.2-0.1,0.4-0.3,0.4-0.6c0-0.9-0.1-1.6-0.8-2.2
-          								c-0.1-0.1,0.7,0.3,0.6,0.2c-0.4-0.5-0.4-0.8-0.2-1.4C225.6,26.4,225.8,25.6,226,24.9z"/>
-          							<path fill="#FFFFFF" d="M37.6,0.7c0-0.1-0.1-0.3-0.2-0.4c-0.1-0.3-0.6-0.4-0.8-0.3c-0.3,0.2-4.3,2.4-7.2,13
-          								c-0.7,1.7-1.4,3.3-2.2,4.9c-0.5,0.9-0.9,1.9-1.1,2.9c-0.1,0.4-0.2,0.9-0.4,1.3c-0.5,0.9-2.3,8.3-3,10.9c-0.1,0.4-0.2,0.9-0.3,1.3
-          								c0,0.1-0.2,0.3-0.3,0.3c-0.1,0-0.3-0.1-0.3-0.3c-0.7-1.9-1-3.9-1.3-5.9c-0.3-1.8-0.4-5.9-0.7-7.7c-0.2-1.5-0.7-2.9-0.9-4.4
-          								c-0.1-0.5-0.4-1-0.6-1.4c-0.1-0.2-0.4-0.5-0.7-0.5c-0.6-0.2-1.3-0.2-2,0.1c-0.3,0.1-0.5,0.3-0.6,0.6c-0.6,1.9-1.4,3.7-2.2,5.6
-          								c-1,2.4-2.4,7-3.5,9.4c-0.3,0.6-0.6,1.2-1,1.7c0,0.1-0.1,0.1-0.2,0.1c-0.2,0.1-0.3,0-0.3-0.2c-0.3-1.4-0.1-1.1-0.2-2.6
-          								c-0.1-3.2,0.2-4.1-0.1-7.3c-0.1-0.7-0.5-6.7-1.5-8.3c-0.4-0.6-0.8-1.2-1.2-1.9C4.4,11,3.7,10.5,2.8,10c-0.7-0.4-1.4-0.3-2.1,0
-          								c-0.3,0.1-0.5,0.4-0.6,0.6C0,11.1-0.1,11.6,0.2,12c0.4,0.7,1.7,5.8,1.9,8.3c0.1,1.2,0.3,2.4,0.3,3.5c0,2.8,0.2,3.2,0.1,6
-          								c0.3,1.4,0.1,1.1,0.2,2.6c0,1.9-0.3,8.5-0.5,10.4c-0.1,1,0.1,2.4,0.4,3.3c0.1,0.2,0.2,0.4,0.4,0.5c0.7,0.7,1.6,1.4,2.5,1.9
-          								c0.1,0.1,0.3,0.1,0.4,0.1c1.2,0.3,2-2.3,2.3-2.6c1.2-1.1,3.4-10.3,3.6-10.8c0.7-2,1.3-5.1,2.3-7c0.1-0.2,0.2-0.4,0.3-0.6
-          								c0.4-1.4,1.1-2.6,1.7-4c0.1,0.4,0.2,0.8,0.2,1.1c0.2,1.3,0.4,2.6,0.5,4c0.4,2.7,1.2,6.3,2,8.9c0.3,1.1,0.2,2.1,0.6,3.6
-          								c0,0.2,0.6,0.4,0.7,0.6c0.4,0.6,0.6,1.1,1.1,1.7c0.7,1.1,1.8,1.5,3,1.6c0.6,0,1.4-0.4,1.6-1c0.1-0.3,0.3-0.7,0.4-1.1
-          								c0.4-1.4,0.9-2.7,1.2-4.1c0.3-1.1,0.9-3.6,1-3.9c0.2-1.5,0.7-2.9,0.8-4.3c0.1-1.1,0.5-2,0.7-3c0-0.4,2.9-8.9,3.1-9.3
-          								c0.1-0.2,0.2-0.6,0.4-1.3c0.5-0.7,0.8-1.5,0.9-2.4c0.1-0.8,0.1-1.8,0.6-2.3c0.7-0.8,0.8-1.8,1.3-2.6c0.6-2.1,1-4,1.2-6
-          								C37.6,2.8,37.7,1.8,37.6,0.7z"/>
-          						</g>
-          						</svg>
-          			  				</a>
-          			  			</li>   
+          	  			</li>
           			</ul>
 
           			<ul class="fr col-7 footerList" id="footerNavItems">
           				<li class="fr">
-          					<a class="subTextRegular white" href="Responsibility/index.html">Responsibility</a>
+          					<a class="subTextRegular white" href="/responsibility/">responsibility</a>
           				</li>
           				<li class="fr">
-          					<a class="subTextRegular white" href="Newsroom/index.html">Newsroom</a>
+          					<a class="subTextRegular white" href="/newsroom/">newsroom</a>
           				</li>
           				<li class="fr">
-          					<a class="subTextRegular white" href="Careers/index.html">Careers</a>
+          					<a class="subTextRegular white" href="/careers/">careers</a>
           				</li>  
           			</ul>
 
           			<ul class="fr col-7 footerList" id="footerLegal">
           				<li class="fr">
-          					<a class="disclaimerSize white" href="California-Supply-Chain-Transparency/index.html">California-Supply-Chain-Transparency</a>
+          					<a class="disclaimerSize white" href="/california-supply-chain-transparency/">california-supply-chain-transparency</a>
           				</li>
           				<li class="fr">
-          					<a class="disclaimerSize white" href="Privacy-Policy/index.html">Privacy-Policy</a>
+          					<a class="disclaimerSize white" href="/privacy-policy/">privacy-policy</a>
           				</li>
           				<li class="fr">
-          					<a class="disclaimerSize white" href="Terms-of-Use/index.html">Terms-of-Use</a>
+          					<a class="disclaimerSize white" href="/terms-of-use/">terms-of-use</a>
           				</li>
           				<li class="fr">
-          					<a class="disclaimerSize white" href="MSDS/index.html">MSDS</a>
+          					<a class="disclaimerSize white" href="/msds/">msds</a>
           				</li>  
           			</ul>
 
@@ -661,7 +584,7 @@
 
   
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0-beta1/jquery.min.js" type="text/javascript"></script>
-    <script src="http://172.16.74.43/FHR/dist/assets/js/main.min.js" type="text/javascript"></script>
+    <script src="/assets/js/main.js" type="text/javascript"></script>
 
 
   </body>

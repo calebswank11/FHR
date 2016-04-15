@@ -7,10 +7,10 @@
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width">
 
-    <link rel="stylesheet" href="http://172.16.74.43/FHR/dist/assets/css/master.css">
-    <link rel="stylesheet" href="http://172.16.74.43/FHR/dist/assets/css/style.css">
-    <link rel="stylesheet" href="http://172.16.74.43/FHR/dist/assets/css/header.css">
-    <link rel="stylesheet" href="http://172.16.74.43/FHR/dist/assets/css/footer.css">
+    <link rel="stylesheet" href="/assets/css/master.css">
+    <link rel="stylesheet" href="/assets/css/style.css">
+    <link rel="stylesheet" href="/assets/css/header.css">
+    <link rel="stylesheet" href="/assets/css/footer.css">
 
     <!-- FONT SCRIPTS -->
     <script src="https://use.typekit.net/feu6hxh.js"></script>
@@ -50,7 +50,7 @@
            	<div class="navOverlay"></div>
            	<div class="mobileAction">Menu</div>
            	<div class="logo white fl">
-           		<a href="/FHR/dist">
+           		<a href="/">
 
            		<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
            			 viewBox="0 0 238.2 67.1" enable-background="new 0 0 238.2 67.1" xml:space="preserve">
@@ -138,7 +138,7 @@
            		<div class="navigationClose">Close</div>
               		<ul class="fr navigationSocial">
               			<li class="dib">
-              				<a href="/FHR/dist/prices/" id="pricesButton" class="button">
+              				<a href="/prices/" id="pricesButton" class="button">
               					Prices
               				</a>
               			</li>
@@ -198,18 +198,21 @@
            		<!--MAIN NAV-->
            		<ul class="bt bcWhite navigation fr">
            			<div class="navigationHover"></div>
+           			<li class="dn" style="display: none">
+           				<a href="fhr.dev:8888"></a>
+           			</li>
            			<li class="dib">
            				<p class="dropdown">About FHR</p>
            				<ul class="subNavigation">
            					<div class="navigationBack">Back</div>
            					<li>
-           						<a href="/FHR/dist/careers">What We Do</a>
+           						<a href="/about">What We Do</a>
            					</li>
            					<li>
-           						<a href="/FHR/dist/careers">Locations</a>
+           						<a href="/careers">Locations</a>
            					</li>
            					<li>
-           						<a href="/FHR/dist/careers">Products You Use</a>
+           						<a href="/careers">Products You Use</a>
            					</li>
            				</ul>
            			</li>
@@ -218,13 +221,13 @@
            				<ul class="subNavigation">
            					<div class="navigationBack">Back</div>
            					<li>
-           						<a href="/FHR/dist/careers">Fuels & Aromoatics</a>
+           						<a href="/fuels-and-aromatics">Fuels & Aromatics</a>
            					</li>
            					<li>
-           						<a href="/FHR/dist/careers">Olefins & Polymers</a>
+           						<a href="/olefins-and-polymers">Olefins & Polymers</a>
            					</li>
            					<li>
-           						<a href="/FHR/dist/biofuels-and-ingredients">Bioduels & Ingredients</a>
+           						<a href="/biofuels-and-ingredients">Biofuels & Ingredients</a>
            					</li>
            				</ul>
            			</li>
@@ -234,14 +237,14 @@
            				</ul>
            			</li>
            			<li class="dib">
-           				<a href="/FHR/dist/newsroom">Newsroom</a>
+           				<a href="/newsroom">Newsroom</a>
            			</li>
            			<li class="dib">
-           				<a href="/FHR/dist/careers">Careers</a>
+           				<a href="/careers">Careers</a>
            			</li>
            		</ul>
            	</div>
-           </nav> 
+           </nav>
 
       <!-- START HERO -->
           <!doctype html>
@@ -255,10 +258,10 @@
           		</h1>
           	</div>
           	<picture>
-          		<source srcset="assets/images/320/HomeHero.jpg" media="(max-width: 320px)">
-          		<source srcset="assets/images/640/HomeHero.jpg" media="(max-width: 640px)">
-          		<source srcset="assets/images/1024/HomeHero.jpg" media="(max-width: 1024px)">
-          		<img src="assets/images/1600/HomeHero.jpg" alt="Hero image homepage">		
+          		<source srcset="/assets/images/320/HomeHero.jpg" media="(max-width: 320px)">
+          		<source srcset="/assets/images/640/HomeHero.jpg" media="(max-width: 640px)">
+          		<source srcset="/assets/images/1024/HomeHero.jpg" media="(max-width: 1024px)">
+          		<img src="/assets/images/1600/HomeHero.jpg" alt="Hero image homepage">		
           	</picture>
           </section>
       
@@ -291,9 +294,9 @@
           			<!-- START TEXT/MODULE CONTENT HERE -->
           			<div class="verticalImageModule">
           				<div class="ImageModuleVisual">
-          					<img src="assets/images/320/homePageInforgraphicImage.png" height="250" width="250" alt="">
+          					<img src="/assets/images/320/homePageInforgraphicImage.png" height="250" width="250" alt="">
           				</div>
-          				<p class="subTextSemiBold tac textShadow white">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Id error.</p>
+          				<p class="subTextRegular tac textShadow white">Since 1997, Flint Hills Resources has reduced its refinery emissions by 76 percent. </p>
           			</div>
           			<!-- END MODULE CONTENT -->
 
@@ -314,17 +317,21 @@
           			<!-- START VERTICAL IMAGE WIDGET -->
           			<div class="verticalImageModule push-right-2 m-push-right-1 m-col-8 col-6 tac">
           				<div class="videoModal ImageModuleVisual" data-video="JYQ0QqhSh7I">
+          					<!-- PLAY ARROW TO OPEN MODAL -->
           					<div class="openModal shadow">
-          						<img src="assets/images/320/videoModalImage-Homepage.jpg" alt="">
+          						<img src="/assets/images/320/videoModalImage-Homepage.jpg" alt="">
           						<div class="playButton"></div>
           					</div>
+          					<!-- CLOSE PLAY ARROW -->
           				</div>
+          				<!-- CONTENT -->
           				<p class="white serif headerSize">&ldquo;Nature and industry can thrive side by side.&rdquo;</p>
           				<p class="italic subTextRegular white">Joe, Reliability Directory
           					<span>Flint Hills Resources</span>
           				</p>
           				<div class="horizontalRow whiteBG"></div>
           				<p class="tac subTextRegular white">Learn about Flint Hills Resources commitment to <a href="" class="white">responsibility.</a></p>
+          				<!-- END CONTENT -->
           			</div>
           			<!-- END VERTICAL IMAGE WIDGET -->
           		<!-- END TEXT/MODULE CONTENT HERE -->
@@ -358,35 +365,67 @@
 
       <!-- START three column module -->
           <!DOCTYPE html>
-
+          <!-- START ROW DEFINITIONS -->
           <section class="threeColumnModule col-17 backgroundTriangleTexture maxWidthRow">
+          	<!-- START MODULE DEFINITIONS -->
+          	<!-- \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\ -->
+          	<!-- NEED TO BE ABLE TO DEFINE MODULES INDIVIDUALLY WITHIN THESE THREE COLUMNS -->
+          	<!-- TYPES OF POTENTIAL MODULES -->
+          	<!-- link with button -->
+          	<!-- video option -->
+          	<!-- profile -->
+          	<!-- profile with video -->
+          	<!-- maybe more to come -->
           	<h3 class="orange">Fast Access to Your Resources</h3>
-          	<div class="push-right-4">
-          		<div class="col-3 fl textColumn backgroundImage" id="homepageRow4Section1">
+          	<div>
+          		<!-- MODULE COLUMN -->
+          		<!-- \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\ -->
+          		<div class="col-divide-3 fl textColumn backgroundImage" id="homepageRow4Section1">
+          			<!-- ID USED FOR BACKGROUND IMAGE. CAN IMPLEMENT ANOTHER WAY IF IT MAKES SENSE -->
           			<div>
+          				<!-- LINK WITH BUTTON -->
+
+          				<!-- COLUMN CONTENT START -->
           				<p class="ttu sans-serif headerSize white">Fuel Watch</p>
           				<div class="horizontalRow whiteBG"></div>
           				<a href="" class="button bdcWhite white">Log In</a>
+          				<!-- COLUMN CONTENT END -->
           			</div>
           			<div class="backgroundImage"></div>
           		</div>
-          		<div class="col-3 fl textColumn backgroundImage" id="homepageRow4Section2">
+          		<!-- MODULE COLUMN -->
+          		<!-- \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\ -->
+          		<div class="col-divide-3 fl textColumn backgroundImage" id="homepageRow4Section2">
+          			<!-- ID USED FOR BACKGROUND IMAGE. CAN IMPLEMENT ANOTHER WAY IF IT MAKES SENSE -->
           			<div>
+          				<!-- LINK WITH BUTTON -->
+
+          				<!-- COLUMN CONTENT START -->
           				<p class="ttu sans-serif headerSize white">Corn Bids</p>
           				<div class="horizontalRow whiteBG"></div>
           				<a href="" class="button bdcWhite white">See Prices</a>
+          				<!-- COLUMN CONTENT END -->
           			</div>
           			<div class="backgroundImage"></div>
           		</div>
-          		<div class="col-3 fl textColumn backgroundImage" id="homepageRow4Section3">
+          		<!-- MODULE COLUMN -->
+          		<!-- \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\ -->
+          		<div class="col-divide-3 fl textColumn backgroundImage" id="homepageRow4Section3">
+          			<!-- ID USED FOR BACKGROUND IMAGE. CAN IMPLEMENT ANOTHER WAY IF IT MAKES SENSE -->
           			<div>
+          				<!-- LINK WITH BUTTON -->
+
+          				<!-- COLUMN CONTENT START -->
           				<p class="ttu sans-serif headerSize white">Careers</p>
           				<div class="horizontalRow whiteBG"></div>
           				<a href="" class="button bdcWhite white">Start Your Career</a>
+          				<!-- COLUMN CONTENT END -->
           			</div>
           			<div class="backgroundImage"></div>
           		</div>
+          		<!-- END MODULE COLUMNS -->
           	</div>
+          	<!-- \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\ -->
           </section>          
 
       <!-- START FOOTER -->
@@ -432,7 +471,7 @@
           		<div class="push-right-2 col-13">
           			<ul class="logoList fl col-6" id="companyLogos">
           	  			<li class="fl">
-          	  				<a id="fhrlogo" href="http://www.fhr.com" target="_blank">
+          	  				<a id="fhrlogo" href="/" target="_blank">
           						<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
           							 viewBox="0 0 238.2 67.1" enable-background="new 0 0 238.2 67.1" xml:space="preserve">
           						<g>
@@ -545,28 +584,28 @@
 
           			<ul class="fr col-7 footerList" id="footerNavItems">
           				<li class="fr">
-          					<a class="subTextRegular white" href="Responsibility/index.html">Responsibility</a>
+          					<a class="subTextRegular white" href="/responsibility/">responsibility</a>
           				</li>
           				<li class="fr">
-          					<a class="subTextRegular white" href="Newsroom/index.html">Newsroom</a>
+          					<a class="subTextRegular white" href="/newsroom/">newsroom</a>
           				</li>
           				<li class="fr">
-          					<a class="subTextRegular white" href="Careers/index.html">Careers</a>
+          					<a class="subTextRegular white" href="/careers/">careers</a>
           				</li>  
           			</ul>
 
           			<ul class="fr col-7 footerList" id="footerLegal">
           				<li class="fr">
-          					<a class="disclaimerSize white" href="California-Supply-Chain-Transparency/index.html">California-Supply-Chain-Transparency</a>
+          					<a class="disclaimerSize white" href="/california-supply-chain-transparency/">california-supply-chain-transparency</a>
           				</li>
           				<li class="fr">
-          					<a class="disclaimerSize white" href="Privacy-Policy/index.html">Privacy-Policy</a>
+          					<a class="disclaimerSize white" href="/privacy-policy/">privacy-policy</a>
           				</li>
           				<li class="fr">
-          					<a class="disclaimerSize white" href="Terms-of-Use/index.html">Terms-of-Use</a>
+          					<a class="disclaimerSize white" href="/terms-of-use/">terms-of-use</a>
           				</li>
           				<li class="fr">
-          					<a class="disclaimerSize white" href="MSDS/index.html">MSDS</a>
+          					<a class="disclaimerSize white" href="/msds/">msds</a>
           				</li>  
           			</ul>
 
@@ -578,10 +617,10 @@
 
 
     </div>
-
   
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0-beta1/jquery.min.js" type="text/javascript"></script>
-    <script src="http://172.16.74.43/FHR/dist/assets/js/main.min.js" type="text/javascript"></script>
+
+    <script src="/assets/js/main.js" type="text/javascript"></script>
 
 
   </body>

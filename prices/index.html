@@ -7,10 +7,10 @@
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width">
 
-    <link rel="stylesheet" href="http://172.16.74.43/FHR/dist/assets/css/master.css">
-    <link rel="stylesheet" href="http://172.16.74.43/FHR/dist/assets/css/style.css">
-    <link rel="stylesheet" href="http://172.16.74.43/FHR/dist/assets/css/header.css">
-    <link rel="stylesheet" href="http://172.16.74.43/FHR/dist/assets/css/footer.css">
+    <link rel="stylesheet" href="/assets/css/master.css">
+    <link rel="stylesheet" href="/assets/css/style.css">
+    <link rel="stylesheet" href="/assets/css/header.css">
+    <link rel="stylesheet" href="/assets/css/footer.css">
 
     <!-- FONT SCRIPTS -->
     <script src="https://use.typekit.net/feu6hxh.js"></script>
@@ -30,7 +30,7 @@
            	<div class="navOverlay"></div>
            	<div class="mobileAction">Menu</div>
            	<div class="logo white fl">
-           		<a href="/FHR/dist">
+           		<a href="/">
 
            		<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
            			 viewBox="0 0 238.2 67.1" enable-background="new 0 0 238.2 67.1" xml:space="preserve">
@@ -118,7 +118,7 @@
            		<div class="navigationClose">Close</div>
               		<ul class="fr navigationSocial">
               			<li class="dib">
-              				<a href="/FHR/dist/prices/" id="pricesButton" class="button">
+              				<a href="/prices/" id="pricesButton" class="button">
               					Prices
               				</a>
               			</li>
@@ -178,18 +178,21 @@
            		<!--MAIN NAV-->
            		<ul class="bt bcWhite navigation fr">
            			<div class="navigationHover"></div>
+           			<li class="dn" style="display: none">
+           				<a href="fhr.dev:8888"></a>
+           			</li>
            			<li class="dib">
            				<p class="dropdown">About FHR</p>
            				<ul class="subNavigation">
            					<div class="navigationBack">Back</div>
            					<li>
-           						<a href="/FHR/dist/careers">What We Do</a>
+           						<a href="/about">What We Do</a>
            					</li>
            					<li>
-           						<a href="/FHR/dist/careers">Locations</a>
+           						<a href="/careers">Locations</a>
            					</li>
            					<li>
-           						<a href="/FHR/dist/careers">Products You Use</a>
+           						<a href="/careers">Products You Use</a>
            					</li>
            				</ul>
            			</li>
@@ -198,13 +201,13 @@
            				<ul class="subNavigation">
            					<div class="navigationBack">Back</div>
            					<li>
-           						<a href="/FHR/dist/careers">Fuels & Aromoatics</a>
+           						<a href="/fuels-and-aromatics">Fuels & Aromatics</a>
            					</li>
            					<li>
-           						<a href="/FHR/dist/careers">Olefins & Polymers</a>
+           						<a href="/olefins-and-polymers">Olefins & Polymers</a>
            					</li>
            					<li>
-           						<a href="/FHR/dist/biofuels-and-ingredients">Bioduels & Ingredients</a>
+           						<a href="/biofuels-and-ingredients">Biofuels & Ingredients</a>
            					</li>
            				</ul>
            			</li>
@@ -214,14 +217,14 @@
            				</ul>
            			</li>
            			<li class="dib">
-           				<a href="/FHR/dist/newsroom">Newsroom</a>
+           				<a href="/newsroom">Newsroom</a>
            			</li>
            			<li class="dib">
-           				<a href="/FHR/dist/careers">Careers</a>
+           				<a href="/careers">Careers</a>
            			</li>
            		</ul>
            	</div>
-           </nav> 
+           </nav>
       <!-- END NAVIGATION -->
 
         <!-- START CONTENT -->
@@ -254,10 +257,10 @@
           </div>
           <!-- PICTURE TAG DEFAULT WITH IE9/10/11 BACKGROUND IMAGE BACKUP -->
           <picture>
-            <source srcset="/FHR/dist/assets/images/320/pricesHero.jpg" media="(max-width: 320px)">
-            <source srcset="/FHR/dist/assets/images/640/pricesHero.jpg" media="(max-width: 640px)">
-            <source srcset="/FHR/dist/assets/images/1024/pricesHero.jpg" media="(max-width: 1024px)">
-            <img src="/FHR/dist/assets/images/1600/pricesHero.jpg" alt="Hero image homepage">   
+            <source srcset="/assets/images/320/pricesHero.jpg" media="(max-width: 320px)">
+            <source srcset="/assets/images/640/pricesHero.jpg" media="(max-width: 640px)">
+            <source srcset="/assets/images/1024/pricesHero.jpg" media="(max-width: 1024px)">
+            <img src="/assets/images/1600/pricesHero.jpg" alt="Hero image homepage">   
           </picture>
         </section>
         <!-- END HERO SECTION -->
@@ -529,6 +532,71 @@
           <div class="col-6 m-col-10  fl">
 
                 <!-- SIDEBAR MODULES START HERE -->
+                <!DOCTYPE html>
+                <div class="col-11 m-col-10 dkGreyBG interiorRiseTop backgroundImage sidebarSection" id="pricesSidebar">
+                	<p class="white light moduleTitle subMedium">
+                		Sign up to receive updates in your email
+                	</p>
+                	<div class="horizontalRow left whiteBG"></div>
+                	<div class="contact">
+                		<p class="white small">
+                			Select the locations you would like to receive prices for.
+                		</p>
+                		<form action="">
+                			<div class="fl col-divide-2">
+                				<input type="checkbox" value="Arthur" class="dib">
+                				<label class="white small dib">
+                					<span></span>
+                					Arthur
+                				</labe>
+                			</div>
+                			<div class="fl col-divide-2">
+                				<input type="checkbox" value="Camilla" class="dib">
+                				<label class="white small dib">
+                					<span></span>
+                					Camilla
+                				</labe>
+                			</div>
+                			<div class="fl col-divide-2">
+                				<input type="checkbox" value="Fairbank" class="dib">
+                				<label class="white small dib">
+                					<span></span>
+                					Fairbank
+                				</labe>
+                			</div>
+                			<div class="fl col-divide-2">
+                				<input type="checkbox" value="Fairmount" class="dib">
+                				<label class="white small dib">
+                					<span></span>
+                					Fairmount
+                				</labe>
+                			</div>
+                			<div class="fl col-divide-2">
+                				<input type="checkbox" value="Iowa Falls" class="dib">
+                				<label class="white small dib">
+                					<span></span>
+                					Iowa Falls
+                				</labe>
+                			</div>
+                			<div class="fl col-divide-2">
+                				<input type="checkbox" value="Menlo" class="dib">
+                				<label class="white small dib">
+                					<span></span>
+                					Menlo
+                				</labe>
+                			</div>
+                			<div class="fl col-divide-2">
+                				<input type="checkbox" value="Shell Rock" class="dib">
+                				<label class="white small dib">
+                					<span></span>
+                					Shell Rock
+                				</labe>
+                			</div>
+                			<input type="text" placeholder="Enter your email address...">
+                			<button class="button bdcWhite tanBG white ttu">Sign Up</button>
+                		</form>
+                	</div>
+                </div>
 
           </div>
           <!-- END INTERIOR TEMPLATE TWO SIDEBAR -->
@@ -583,7 +651,7 @@
           		<div class="push-right-2 col-13">
           			<ul class="logoList fl col-6" id="companyLogos">
           	  			<li class="fl">
-          	  				<a id="fhrlogo" href="http://www.fhr.com" target="_blank">
+          	  				<a id="fhrlogo" href="/" target="_blank">
           						<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
           							 viewBox="0 0 238.2 67.1" enable-background="new 0 0 238.2 67.1" xml:space="preserve">
           						<g>
@@ -696,28 +764,28 @@
 
           			<ul class="fr col-7 footerList" id="footerNavItems">
           				<li class="fr">
-          					<a class="subTextRegular white" href="Responsibility/index.html">Responsibility</a>
+          					<a class="subTextRegular white" href="/responsibility/">responsibility</a>
           				</li>
           				<li class="fr">
-          					<a class="subTextRegular white" href="Newsroom/index.html">Newsroom</a>
+          					<a class="subTextRegular white" href="/newsroom/">newsroom</a>
           				</li>
           				<li class="fr">
-          					<a class="subTextRegular white" href="Careers/index.html">Careers</a>
+          					<a class="subTextRegular white" href="/careers/">careers</a>
           				</li>  
           			</ul>
 
           			<ul class="fr col-7 footerList" id="footerLegal">
           				<li class="fr">
-          					<a class="disclaimerSize white" href="California-Supply-Chain-Transparency/index.html">California-Supply-Chain-Transparency</a>
+          					<a class="disclaimerSize white" href="/california-supply-chain-transparency/">california-supply-chain-transparency</a>
           				</li>
           				<li class="fr">
-          					<a class="disclaimerSize white" href="Privacy-Policy/index.html">Privacy-Policy</a>
+          					<a class="disclaimerSize white" href="/privacy-policy/">privacy-policy</a>
           				</li>
           				<li class="fr">
-          					<a class="disclaimerSize white" href="Terms-of-Use/index.html">Terms-of-Use</a>
+          					<a class="disclaimerSize white" href="/terms-of-use/">terms-of-use</a>
           				</li>
           				<li class="fr">
-          					<a class="disclaimerSize white" href="MSDS/index.html">MSDS</a>
+          					<a class="disclaimerSize white" href="/msds/">msds</a>
           				</li>  
           			</ul>
 
@@ -731,7 +799,7 @@
     </div>
   
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0-beta1/jquery.min.js" type="text/javascript"></script>
-    <script src="http://172.16.74.43/FHR/dist/assets/js/main.min.js" type="text/javascript"></script>
+    <script src="/assets/js/main.js" type="text/javascript"></script>
 
 
   </body>

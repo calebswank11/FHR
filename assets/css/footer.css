@@ -1,3 +1,4 @@
+footer{overflow:hidden;}
 footer div{position:relative;}
 footer>div:last-of-type{padding:3rem 0;}
 footer ul a{font-weight:100;}
@@ -7,7 +8,7 @@ footer ul:nth-of-type(2){padding-bottom:1rem;}
 #footerContact::before{content:'';display:block;position:absolute;height:100%;width:100%;width:110%;left:50%;top:50%;transform:translate(-50%,-50%);-webkit-box-shadow:inset 0 4px 10px rgba(0,0,0,0.4);box-shadow:inset 0 4px 10px rgba(0,0,0,0.4);pointer-events:none;}
 #footerContact p{font-weight:600;line-height:calc(1rem + 20px);}
 #breadcrumbs{position:relative;padding:1.5rem 0;}
-#breadcrumbs::before{content:'';display:block;position:absolute;height:100%;width:100%;left:50%;top:50%;transform:translate(-50%,-50%);background-image:url(../images/patterns/chevron-pattern-black.png);background-repeat:repeat;opacity:.15;}
+#breadcrumbs::before{content:'';display:block;position:absolute;height:100%;width:100%;left:50%;top:50%;transform:translate(-50%,-50%);background-image:url(../images/patterns/chevron-pattern-black.png);background-repeat:repeat;opacity:.1;}
 #breadcrumbs li{list-style:none;padding:0 .5rem;}
 #breadcrumbs a{color:#c5c09f;font-weight:400;text-decoration:none;}
 .goHome{position:relative;height:30px;width:20px;}

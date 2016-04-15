@@ -7,16 +7,22 @@
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width">
 
-    <link rel="stylesheet" href="http://172.16.74.43/FHR/dist/assets/css/master.css">
-    <link rel="stylesheet" href="http://172.16.74.43/FHR/dist/assets/css/style.css">
-    <link rel="stylesheet" href="http://172.16.74.43/FHR/dist/assets/css/header.css">
-    <link rel="stylesheet" href="http://172.16.74.43/FHR/dist/assets/css/footer.css">
+    <link rel="stylesheet" href="/assets/css/master.css">
+    <link rel="stylesheet" href="/assets/css/style.css">
+    <link rel="stylesheet" href="/assets/css/header.css">
+    <link rel="stylesheet" href="/assets/css/footer.css">
 
+    <!-- FONT SCRIPTS -->
+    <script src="https://use.typekit.net/feu6hxh.js"></script>
+    <script>try{Typekit.load({ async: true });}catch(e){}</script>
+    <link href='https://fonts.googleapis.com/css?family=Roboto+Slab:400,300,100&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
+    <!-- END FONT SCRIPTS -->
   </head>
 
   <body>
+    <div class="modal">
+    </div>
     <div class="container">
-
       <!-- START NAVIGATION --> 
            <!doctype html>
 
@@ -24,7 +30,7 @@
            	<div class="navOverlay"></div>
            	<div class="mobileAction">Menu</div>
            	<div class="logo white fl">
-           		<a href="/FHR/dist">
+           		<a href="/">
 
            		<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
            			 viewBox="0 0 238.2 67.1" enable-background="new 0 0 238.2 67.1" xml:space="preserve">
@@ -112,7 +118,7 @@
            		<div class="navigationClose">Close</div>
               		<ul class="fr navigationSocial">
               			<li class="dib">
-              				<a href="/FHR/dist/prices/" id="pricesButton" class="button">
+              				<a href="/prices/" id="pricesButton" class="button">
               					Prices
               				</a>
               			</li>
@@ -172,18 +178,21 @@
            		<!--MAIN NAV-->
            		<ul class="bt bcWhite navigation fr">
            			<div class="navigationHover"></div>
+           			<li class="dn" style="display: none">
+           				<a href="fhr.dev:8888"></a>
+           			</li>
            			<li class="dib">
            				<p class="dropdown">About FHR</p>
            				<ul class="subNavigation">
            					<div class="navigationBack">Back</div>
            					<li>
-           						<a href="/FHR/dist/careers">What We Do</a>
+           						<a href="/about">What We Do</a>
            					</li>
            					<li>
-           						<a href="/FHR/dist/careers">Locations</a>
+           						<a href="/careers">Locations</a>
            					</li>
            					<li>
-           						<a href="/FHR/dist/careers">Products You Use</a>
+           						<a href="/careers">Products You Use</a>
            					</li>
            				</ul>
            			</li>
@@ -192,13 +201,13 @@
            				<ul class="subNavigation">
            					<div class="navigationBack">Back</div>
            					<li>
-           						<a href="/FHR/dist/careers">Fuels & Aromoatics</a>
+           						<a href="/fuels-and-aromatics">Fuels & Aromatics</a>
            					</li>
            					<li>
-           						<a href="/FHR/dist/careers">Olefins & Polymers</a>
+           						<a href="/olefins-and-polymers">Olefins & Polymers</a>
            					</li>
            					<li>
-           						<a href="/FHR/dist/biofuels-and-ingredients">Bioduels & Ingredients</a>
+           						<a href="/biofuels-and-ingredients">Biofuels & Ingredients</a>
            					</li>
            				</ul>
            			</li>
@@ -208,170 +217,222 @@
            				</ul>
            			</li>
            			<li class="dib">
-           				<a href="/FHR/dist/newsroom">Newsroom</a>
+           				<a href="/newsroom">Newsroom</a>
            			</li>
            			<li class="dib">
-           				<a href="/FHR/dist/careers">Careers</a>
+           				<a href="/careers">Careers</a>
            			</li>
            		</ul>
            	</div>
-           </nav> 
+           </nav>
+      <!-- END NAVIGATION -->
 
-      <!-- START HERO -->
-          <!doctype html>
+        <!-- START CONTENT -->
+        <!-- //////////// -->
 
-          <section class="pageHero interiorHero top">
-          	<div class="heroText">
-          		<p class="heroSubText ttu dkTan tac">
-          			biofuels and ingredients
-          		</p>
-          		<h1 class="tac ttu">
-          			EVERY KERNEL COUNTS
-          		</h1>
-          		<div class="horizontalRow orangeBG"></div>
-          		<p class="tac">
-          			Each year, Flint Hills Resources purchases 288 million bushels of corn to process at its eight biofuels and ingredients facilities in Georgia, Iowa and Nebraska. Farmers work hard to grow and harvest these crops, and Flint Hills Resources strives to get the most value out of each kernel. 
-          		</p>
 
-          	</div>
-          	<picture>
-          		<source srcset="/FHR/dist/assets/images/320/biofuels-and-ingredients-hero.jpg" media="(max-width: 320px)">
-          		<source srcset="/FHR/dist/assets/images/640/biofuels-and-ingredients-hero.jpg" media="(max-width: 640px)">
-          		<source srcset="/FHR/dist/assets/images/1024/biofuels-and-ingredients-hero.jpg" media="(max-width: 1024px)">
-          		<img src="/FHR/dist/assets/images/1600/biofuels-and-ingredients-hero.jpg" alt="Hero image homepage">		
-          	</picture>
-          </section>
+        <!-- ////////////////////////////// -->
+        <!-- START INTERIOR TEMPLATE TWO --> 
 
-      <section class="sidebarTemplate backgroundTriangleTexture">
-      
+        <!-- START HERO -->
+        <section class="pageHero interiorHero top">
+          <div class="heroText">
+            <p class="heroSubText ttu dkTan tac">
+              <!-- PAGE TITLE USED ON PRODUCTS -->
+                <!-- OPTIONAL -->
+                <!-- MAYBE ONLY ON NESTED PAGES AND DICTATED BY NAVIGATION/CONTENT TREE -->
+                Biofuels and Ingredients
+            </p>
+            <h1 class="tac ttu">
+              <!-- HERO TITLE HERE -->
+                <!-- REQUIRED -->
+                Every Kernel Counts
+            </h1>
+            <div class="horizontalRow orangeBG"></div>
+            <p class="tac">
+              <!-- PAGE EXPLANATION AND HERO TEXT HERE -->
+                <!-- OPTIONAL -->
+                Each year, Flint Hills Resources purchases 288 million bushels of corn to process at its eight biofuels and ingredients facilities in Georgia, Iowa and Nebraska. Farmers work hard to grow and harvest these crops, and Flint Hills Resources strives to get the most value out of each kernel. 
+            </p>
 
-            <!-- START SIDEBAR LEFT BODY-->
+          </div>
+          <!-- PICTURE TAG DEFAULT WITH IE9/10/11 BACKGROUND IMAGE BACKUP -->
+          <picture>
+            <source srcset="/assets/images/320/biofuels-and-ingredients-hero.jpg" media="(max-width: 320px)">
+            <source srcset="/assets/images/640/biofuels-and-ingredients-hero.jpg" media="(max-width: 640px)">
+            <source srcset="/assets/images/1024/biofuels-and-ingredients-hero.jpg" media="(max-width: 1024px)">
+            <img src="/assets/images/1600/biofuels-and-ingredients-hero.jpg" alt="Hero image homepage">   
+          </picture>
+        </section>
+        <!-- END HERO SECTION -->
+
+        <!-- START TWO COLUMN INTERIOR TEMPLATE WITH WIDE SIDEBAR -->
+        <section class="sidebarTemplate backgroundTriangleTexture">
+
+          <!-- INTERIOR TEMPLATE TWO BODY(LEFT) -->
+          <div class="col-11 m-col-10 fl interiorLeftSection" id="products">
+          <!-- PAGENAME AS ID -->
+            <div class="col-14 m-col-10  push-right-3">
+            
+              <!-- START SIDEBAR LEFT BODY-->
               <!DOCTYPE html>
 
-              <div class="col-11 m-col-10 fl interiorLeftSection" id="products">
+              <!-- start interior container -->            
+              <div class="col-17 m-col-10">
 
 
-              	<!-- start interior container -->            
-              	<div class="col-14 m-col-10  push-right-3">
-
-
+              	<div cass="productIntro">
               		<h2 class="moduleTitle orange serif">
               			Fields of Expertise
               		</h2>
               		<p>
               			Flint Hills Resources has blended biofuels since the 1990s. Today, the company is still exploring the next advancements in alternative fuels and related ingredient products.
               		</p>
+              	</div>
 
-              		<div class="horizontalStory imageLeft imageHeight col-17 bdcDkGrey borderAll product">
-              			<div class="col-10 fr whiteBG">
-              				<h3 class="serif moduleTitle orange">Ethanol</h3>
-              				<p class="teaserText greyText">
-              					Flint Hills Resources uses Cellunator™ technology at multiple facilities to mill corn into uniform pieces, converting a higher percentage of sugars needed to make ethanol. A partnership with Syngenta is also underway to test the potential for Enogen corn to increase ethanol yields while reducing water and natural gas consumption.
-              				</p>
-              				<a href="#" class="tdn button lightShadow white ttu tanBG bdcWhite">Locations</a>
+              	<div class="horizontalStory imageLeft imageHeight col-17 bdcDkGrey borderAll product">
+              		<div class="col-10 fr whiteBG">
+              			<h3 class="serif moduleTitle orange">Ethanol</h3>
+              			<p class="teaserText greyText">
+              				Flint Hills Resources uses Cellunator™ technology at multiple facilities to mill corn into uniform pieces, converting a higher percentage of sugars needed to make ethanol. A partnership with Syngenta is also underway to test the potential for Enogen corn to increase ethanol yields while reducing water and natural gas consumption.
+              			</p>
+              			<a href="#" class="tdn button lightShadow white ttu tanBG bdcWhite">Locations</a>
+              		</div>
+              		<div class="col-7 oh">
+              			<img src="/assets/images/products/productsEthanol.jpg" alt="">
+              			<div>
+              				<p class="serif semibold white greyBG o9 light">Inquiries <a href="tel:1-800-999-0326" class="orange tdn light">1-800-999-0326</a></p>
               			</div>
-              			<div class="col-7 posa oh">
-              				<img src="/FHR/dist/assets/images/640/products-ethanol.jpg" alt="">
+              		</div>
+              	</div>
+
+              	<div class="horizontalStory imageLeft imageHeight col-17 bdcDkGrey borderAll product">
+              		<div class="col-10 fr whiteBG">
+              			<h3 class="serif moduleTitle orange">Biodiesel</h3>
+              			<p class="teaserText greyText">
+              				Partnering with Benefuel Inc., a Texas-based company with a patented process for transforming non-food fats and oils into fuels, lubricants and chemicals, Flint Hills Resources operates a biofuels facility in Beatrice, Nebraska. The site is designed to take inedible corn oil, a byproduct of ethanol production, and make biodiesel. 
+              			</p>
+              			<a href="#" class="tdn button lightShadow white ttu tanBG bdcWhite">Locations</a>
+              		</div>
+              		<div class="col-7 oh">
+              			<img src="/assets/images/products/productsBiodiesel.jpg" alt="">
+              			<div>
               				<p class="serif semibold white dkGreyBG o9 light">Inquiries <a href="tel:1-800-999-0326" class="orange tdn light">1-800-999-0326</a></p>
               			</div>
               		</div>
+              	</div>
 
-              		<div class="horizontalStory imageLeft imageHeight col-17 bdcDkGrey borderAll product">
-              			<div class="col-10 fr whiteBG">
-              				<h3 class="serif moduleTitle orange">Biodiesel</h3>
-              				<p class="teaserText greyText">
-              					Partnering with Benefuel Inc., a Texas-based company with a patented process for transforming non-food fats and oils into fuels, lubricants and chemicals, Flint Hills Resources operates a biofuels facility in Beatrice, Nebraska. The site is designed to take inedible corn oil, a byproduct of ethanol production, and make biodiesel. 
-              				</p>
-              				<a href="#" class="tdn button lightShadow white ttu tanBG bdcWhite">Locations</a>
-              			</div>
-              			<div class="col-7 posa oh">
-              				<img src="/FHR/dist/assets/images/640/products-biodiesel.jpg" alt="">
+              	<div class="horizontalStory imageLeft imageHeight col-17 bdcDkGrey borderAll product">
+              		<div class="col-10 fr whiteBG">
+              			<h3 class="serif moduleTitle orange">Inedible Corn Oil</h3>
+              			<p class="teaserText greyText">
+              				Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perspiciatis voluptas veniam ullam iste blanditiis, ipsam fugiat perferendis tempora totam pariatur, optio, repudiandae molestiae culpa, magni facilis suscipit ducimus doloribus autem.
+              			</p>
+              			<a href="#" class="tdn button lightShadow white ttu tanBG bdcWhite">Locations</a>
+              		</div>
+              		<div class="col-7 oh">
+              			<img src="/assets/images/products/productsInedibleCornOil.jpg" alt="">
+              			<div>
               				<p class="serif semibold white dkGreyBG o9 light">Inquiries <a href="tel:1-800-999-0326" class="orange tdn light">1-800-999-0326</a></p>
               			</div>
               		</div>
+              	</div>
 
-              		<div class="horizontalStory imageLeft imageHeight col-17 bdcDkGrey borderAll product">
-              			<div class="col-10 fr whiteBG">
-              				<h3 class="serif moduleTitle orange">Inedible Corn Oil</h3>
-              				<p class="teaserText greyText">
-              					Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perspiciatis voluptas veniam ullam iste blanditiis, ipsam fugiat perferendis tempora totam pariatur, optio, repudiandae molestiae culpa, magni facilis suscipit ducimus doloribus autem.
-              				</p>
-              				<a href="#" class="tdn button lightShadow white ttu tanBG bdcWhite">Locations</a>
-              			</div>
-              			<div class="col-7 posa oh">
-              				<img src="/FHR/dist/assets/images/640/products-inedible-corn-oil.jpg" alt="">
+              	<div class="horizontalStory imageLeft imageHeight col-17 bdcDkGrey borderAll product">
+              		<div class="col-10 fr whiteBG">
+              			<h3 class="serif moduleTitle orange">Distillers Grains</h3>
+              			<p class="teaserText greyText">
+              				Lorem ipsum dolor sit amet, consectetur adipisicing elit. Unde sit obcaecati numquam ducimus facilis. Pariatur aspernatur fuga quibusdam. A eius assumenda tempora repellat animi. Sit quibusdam nemo beatae incidunt magni.
+              			</p>
+              			<a href="#" class="tdn button lightShadow white ttu tanBG bdcWhite">Locations</a>
+              		</div>
+              		<div class="col-7 oh">
+              			<img src="/assets/images/products/productsDistillerGrains.jpg" alt="">
+              			<div>
               				<p class="serif semibold white dkGreyBG o9 light">Inquiries <a href="tel:1-800-999-0326" class="orange tdn light">1-800-999-0326</a></p>
               			</div>
               		</div>
-
-              		<div class="horizontalStory imageLeft imageHeight col-17 bdcDkGrey borderAll product">
-              			<div class="col-10 fr whiteBG">
-              				<h3 class="serif moduleTitle orange">Distillers Grains</h3>
-              				<p class="teaserText greyText">
-              					Lorem ipsum dolor sit amet, consectetur adipisicing elit. Unde sit obcaecati numquam ducimus facilis. Pariatur aspernatur fuga quibusdam. A eius assumenda tempora repellat animi. Sit quibusdam nemo beatae incidunt magni.
-              				</p>
-              				<a href="#" class="tdn button lightShadow white ttu tanBG bdcWhite">Locations</a>
-              			</div>
-              			<div class="col-7 posa oh">
-              				<img src="/FHR/dist/assets/images/640/products-distillers-grains.jpg" alt="">
-              				<p class="serif semibold white dkGreyBG o9 light">Inquiries <a href="tel:1-800-999-0326" class="orange tdn light">1-800-999-0326</a></p>
-              			</div>
-              		</div>
-
               	</div>
 
               </div>
+
+            </div>
+          </div>
+          <!-- END INTERIOR TEMPLATE TWO BODY (LEFT) -->
+          
+
+          <!-- START INTERIOR TEMPLATE TWO SIDEBAR -->
+          <div class="col-6 m-col-10  fl">
             
             <!-- START SIDEBAR RIGHT TEMPLATE-->
               <!DOCTYPE html>
-
-              <div class="col-6 m-col-10  fl">
-              	<div class="col-11 m-col-10  dkGreyBG interiorRiseTop backgroundImage sidebarSection" id="newsroomSidebar">
-              		<p class="orange light moduleTitle">
-              			Media Contacts
+              <div class="col-12 m-col-10 dkGreyBG interiorRiseTop backgroundImage sidebarSection" id="customPricesSidebar">
+              	<p class="white thin moduleTitle subMedium serif">
+              		Current Corn Pricing
+              	</p>
+              	<div class="horizontalRow left whiteBG"></div>
+              	<div class="col-14">
+              		<form action="">
+              			<div class="selectParent">
+              				<select name="" id="" class="bdcWhite greyBG white small light">
+              					<option value="Select a Location" style="display: none;" disabled selected>Select a location...</option>
+              					<option value="Arthur">Arthur</option>
+              					<option value="Camilla">Camilla</option>
+              					<option value="Fairbank">Fairbank</option>
+              					<option value="Iowa Falls">Iowa Falls</option>
+              					<option value="Menlo">Menlo</option>
+              					<option value="Shell Rock">Shell Rock</option>
+              				</select>
+              			</div>
+              			<div class="displayPricing">
+              				<div>
+              					<h2 class="location serif tan light">Shell Rock</h2>
+              					<p class="white currentMonth">February 2016</p>
+              				</div>
+              				<table>
+              					<tr>
+              						<td class="label white ttu">Bid</td>
+              						<td class="tar white changeMe">$3.46</td>
+              					</tr>
+              					<tr>
+              						<td class="label white ttu">Basis</td>
+              						<td class="tar white changeMe">($0.18)</td>
+              					</tr>
+              					<tr>
+              						<td class="label white ttu">Futures</td>
+              						<td class="tar white changeMe">$3.64</td>
+              					</tr>
+              					<tr>
+              						<td class="label white ttu">Futures Month</td>
+              						<td class="tar white changeMe">H16</td>
+              					</tr>
+              					<tr>
+              						<td class="label white ttu">Price Change</td>
+              						<td class="tar white changeMe red semibold">($0.0175)</td>
+              					</tr>
+              				</table>
+              			</div>
+              			<button type="submit" class="button bdcWhite dkTanBG white light lightShadow">Subscribe to Pricing Emails</button>
+              		</form>
+              		<p class="bt bdcWhite small white">
+              			Each site offers consistent receiving hours, extended harvest hours, fast loading and unloading, competitive contracts and guaranteed timely payment.
               		</p>
-              		<div class="horizontalRow left whiteBG"></div>
-              		<div class="contact">
-              			<h4 class="serif white">
-              				Deanna Altenhoff
-              			</h4>
-              			<p class="title subTextRegular white">
-              				Director, Public Affairs Texas, Odessa sites, and all terminals
-              			</p>
-              			<a href="tel:+1-512-476-4795" class="subTextRegular phone white serif">512-476-4795</a>
-              		</div>
-              		<div class="contact">
-              			<h4 class="serif white">
-              				Jake Reint
-              			</h4>
-              			<p class="title subTextRegular white">
-              				Director, Public Affairs Corporate and Midwest Refining & Petrochemical sites
-              			</p>
-              			<a href="tel:+1-651-438-1331" class="subTextRegular phone white serif">651-438-1331</a>
-              		</div>
-              		<div class="contact">
-              			<h4 class="serif white">
-              				Rachel Ryan
-              			</h4>
-              			<p class="title subTextRegular white">
-              				Manager, Communication & Community Relations Biofuels and Ingredients (Georgia, Iowa & Nebraska)
-              			</p>
-              			<a href="tel:+1-651-438-1399" class="subTextRegular phone white serif">651-438-1399</a>
-              		</div>
-              		<div class="contact">
-              			<h4 class="serif white">
-              				Darcy Schroeder
-              			</h4>
-              			<p class="title subTextRegular white">
-              				Regional Manager, Public Affairs Corpus Christi, Texas refineries
-              			</p>
-              			<a href="tel:+1-361-242-8772" class="subTextRegular phone white serif">361-242-8772</a>
-              		</div>
               	</div>
               </div>
+              <div class="col-12 m-col-10 sidebarSection tac bdcOrange borderAll statistics">
+              	<h3 class="moduleTitle orange">Annaul Production Capacity</h3>
+              	<img class="col-13 transX" src="/assets/images/svgs/biofuels-and-ingredients-stats.svg" alt="">
+              </div>
 
+          </div>
+          <!-- END INTERIOR TEMPLATE TWO SIDEBAR -->
 
-      </section>
+          <!-- END PIECES OF INTERIORE TEMPLATE TWO -->
+          <!-- ////////////////////////////// -->
+
+          <!-- //////////// -->
+        <!-- END CONTENT -->
+        </section>
 
       <!-- START FOOTER -->
           <!doctype html>
@@ -416,7 +477,7 @@
           		<div class="push-right-2 col-13">
           			<ul class="logoList fl col-6" id="companyLogos">
           	  			<li class="fl">
-          	  				<a id="fhrlogo" href="http://www.fhr.com" target="_blank">
+          	  				<a id="fhrlogo" href="/" target="_blank">
           						<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
           							 viewBox="0 0 238.2 67.1" enable-background="new 0 0 238.2 67.1" xml:space="preserve">
           						<g>
@@ -529,28 +590,28 @@
 
           			<ul class="fr col-7 footerList" id="footerNavItems">
           				<li class="fr">
-          					<a class="subTextRegular white" href="Responsibility/index.html">Responsibility</a>
+          					<a class="subTextRegular white" href="/responsibility/">responsibility</a>
           				</li>
           				<li class="fr">
-          					<a class="subTextRegular white" href="Newsroom/index.html">Newsroom</a>
+          					<a class="subTextRegular white" href="/newsroom/">newsroom</a>
           				</li>
           				<li class="fr">
-          					<a class="subTextRegular white" href="Careers/index.html">Careers</a>
+          					<a class="subTextRegular white" href="/careers/">careers</a>
           				</li>  
           			</ul>
 
           			<ul class="fr col-7 footerList" id="footerLegal">
           				<li class="fr">
-          					<a class="disclaimerSize white" href="California-Supply-Chain-Transparency/index.html">California-Supply-Chain-Transparency</a>
+          					<a class="disclaimerSize white" href="/california-supply-chain-transparency/">california-supply-chain-transparency</a>
           				</li>
           				<li class="fr">
-          					<a class="disclaimerSize white" href="Privacy-Policy/index.html">Privacy-Policy</a>
+          					<a class="disclaimerSize white" href="/privacy-policy/">privacy-policy</a>
           				</li>
           				<li class="fr">
-          					<a class="disclaimerSize white" href="Terms-of-Use/index.html">Terms-of-Use</a>
+          					<a class="disclaimerSize white" href="/terms-of-use/">terms-of-use</a>
           				</li>
           				<li class="fr">
-          					<a class="disclaimerSize white" href="MSDS/index.html">MSDS</a>
+          					<a class="disclaimerSize white" href="/msds/">msds</a>
           				</li>  
           			</ul>
 
@@ -560,12 +621,11 @@
 
           </footer> 
 
-
+      <!-- END FOOTER -->
     </div>
-
   
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0-beta1/jquery.min.js" type="text/javascript"></script>
-    <script src="http://172.16.74.43/FHR/dist/assets/js/main.min.js" type="text/javascript"></script>
+    <script src="/assets/js/main.js" type="text/javascript"></script>
 
 
   </body>
